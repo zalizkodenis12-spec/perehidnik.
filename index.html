@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>KAVARO — Coffee & Beyond</title>
-    <meta name="description" content="KAVARO — Coffee & Beyond. Переходьте в наш Instagram або залиште відгук у Google!">
-    <meta name="theme-color" content="#0a0a0c">
+    <title>monamur — Парфумерія</title>
+    <meta name="description" content="monamur — парфумерія. Переходьте в наш Instagram або залиште відгук у Google!">
+    <meta name="theme-color" content="#08080a">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -15,11 +15,11 @@
             --card-bg: rgba(255, 255, 255, 0.05);
             --card-bg-hover: rgba(255, 255, 255, 0.09);
             --card-border: rgba(255, 255, 255, 0.08);
-            --card-border-hover: rgba(212, 175, 55, 0.35);
+            --card-border-hover: rgba(0, 90, 255, 0.4);
             --text-primary: #ffffff;
             --text-secondary: #8e8e93;
             --text-subtitle: #b0b0b8;
-            --accent-gold: #d4af37;
+            --accent-brand: #0024d2;
         }
 
         * {
@@ -60,30 +60,30 @@
             width: 100%;
             height: 250px;
             overflow: hidden;
-            background: #18120c;
+            background: #00103b;
         }
 
         .hero-banner-bg {
             position: absolute;
             inset: 0;
-            background-image: url('ава.jpg');
+            background-image: url('logo.png');
             background-size: cover;
             background-position: center;
-            filter: blur(3px) brightness(0.72) contrast(1.1);
-            transform: scale(1.08);
+            filter: blur(8px) brightness(0.65) contrast(1.1);
+            transform: scale(1.12);
             animation: slowZoom 14s ease-in-out infinite alternate;
         }
 
-        /* Додаткове тепле свічення поверх банера */
+        /* Додаткове фірмове синє свічення поверх банера */
         .hero-banner::before {
             content: '';
             position: absolute;
             inset: 0;
-            background: radial-gradient(circle at 50% 35%, rgba(212, 175, 55, 0.18), transparent 70%);
+            background: radial-gradient(circle at 50% 35%, rgba(0, 60, 230, 0.35), transparent 70%);
             z-index: 1;
         }
 
-        /* Градієнт переходу банера в чорний фон (як на референсі Wisty) */
+        /* Градієнт переходу банера в чорний фон */
         .hero-banner::after {
             content: '';
             position: absolute;
@@ -121,8 +121,8 @@
             height: 112px;
             border-radius: 50%;
             padding: 3px;
-            background: linear-gradient(135deg, rgba(212, 175, 55, 0.65), rgba(255, 255, 255, 0.15), rgba(212, 175, 55, 0.4));
-            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.75), 0 0 25px rgba(212, 175, 55, 0.15);
+            background: linear-gradient(135deg, rgba(0, 90, 255, 0.85), rgba(255, 255, 255, 0.35), rgba(0, 45, 210, 0.7));
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.75), 0 0 25px rgba(0, 70, 255, 0.3);
             margin-bottom: 16px;
         }
 
@@ -130,7 +130,7 @@
             width: 100%;
             height: 100%;
             border-radius: 50%;
-            background-color: #2a1f17;
+            background-color: #0024d2;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -139,10 +139,10 @@
         }
 
         .avatar-circle img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            background-color: #2a1f17;
+            width: 86%;
+            height: 86%;
+            object-fit: contain;
+            background-color: #0024d2;
         }
 
         .profile-name {
@@ -164,7 +164,8 @@
             font-size: 14px;
             font-weight: 500;
             color: var(--text-subtitle);
-            letter-spacing: 0.03em;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
         }
 
         /* Список прямокутних кнопок-перехідників */
@@ -306,7 +307,7 @@
 <body>
 
     <main class="page-wrapper">
-        <!-- Верхній банер з тією ж аватаркою -->
+        <!-- Верхній банер із затемненням -->
         <div class="hero-banner">
             <div class="hero-banner-bg"></div>
         </div>
@@ -315,17 +316,17 @@
         <section class="profile-section">
             <div class="avatar-ring">
                 <div class="avatar-circle">
-                    <img src="ава.jpg" alt="KAVARO Logo">
+                    <img src="logo.png" alt="monamur">
                 </div>
             </div>
-            <h1 class="profile-name">KAVARO</h1>
-            <p class="profile-bio">COFFEE &amp; BEYOND</p>
+            <h1 class="profile-name">monamur</h1>
+            <p class="profile-bio">Парфумерія</p>
         </section>
 
         <!-- Прямокутні картки-перехідники -->
         <section class="links-list">
             <!-- Instagram -->
-            <a class="link-card" href="https://www.instagram.com/kavarocoffee?psln=MWlrNDI2YTExOTRwbw==" target="_blank" rel="noopener noreferrer">
+            <a class="link-card" href="https://www.instagram.com/monamur.vn?utm_source=ig_web_button_share_sheet&amp;exln=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">
                 <div class="link-left">
                     <div class="link-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
@@ -336,7 +337,7 @@
                     </div>
                     <div class="link-text">
                         <span class="link-title">Instagram</span>
-                        <span class="link-subtitle">@kavarocoffee</span>
+                        <span class="link-subtitle">@monamur.vn</span>
                     </div>
                 </div>
                 <div class="link-arrow">
@@ -347,7 +348,7 @@
             </a>
 
             <!-- Google Відгук -->
-            <a class="link-card" href="https://search.google.com/local/writereview?placeid=ChIJaTozZsNdLUcRDs73qvjNXWU" target="_blank" rel="noopener noreferrer">
+            <a class="link-card" href="https://search.google.com/local/writereview?placeid=ChIJpSUIFZtdLUcRWCd38pQeMXM" target="_blank" rel="noopener noreferrer">
                 <div class="link-left">
                     <div class="link-icon">
                         <svg viewBox="0 0 24 24" fill="none">
